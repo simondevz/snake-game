@@ -1,0 +1,80 @@
+@use "../../styles"
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+
+.score
+    padding: .5rem
+    
+    span
+        display: block
+        font-family: 'VT323', monospace
+        
+    .header
+        display: inline-block
+        font-weight: 700
+
+.gameOver
+    background: lavender
+    position: absolute
+    width: 17rem
+    height: 7rem
+    top: 30%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 200
+    
+    span
+        display: block
+        text-align: center
+        font-size: 1.2rem
+        font-family: 'VT323', monospace
+        
+    .header
+        font-weight: 700
+        font-size: 1.5rem
+        line-height: 1.75
+    
+    button
+        width: 50%
+        height: 2rem
+        border: none
+        background: transparent
+
+.controls
+    position: fixed
+    bottom: 0
+    height: 12rem
+    width: 100%
+    background: red
+    
+    %control_button
+        display: flex
+        background: grey
+        height: 3rem
+        width: 6rem
+        position: absolute
+        margin: auto
+        
+    .left
+        @extend %control_button
+        left: 1rem
+        top: 0
+        bottom: 0
+        
+    .up
+        @extend %control_button
+        top: 1rem
+        right: 0
+        left: 0
+        
+    .right
+        @extend %control_button
+        right: 1rem
+        top: 0
+        bottom: 0
+        
+    .down
+        @extend %control_button
+        bottom: 1rem
+        right: 0
+        left: 0
+        

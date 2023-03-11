@@ -1,0 +1,36 @@
+@use "../../styles"
+
+.floor
+    background: black
+    display: inline-block
+    position: absolute
+    top: 35%
+    left: 50%
+    transform: translate(-50%, -50%)
+    
+    .score
+        background: white
+        
+    .row
+        display: flex
+        flex-direction: row
+        margin: 0
+        padding: 0
+    
+    .cell
+        display: inline-block
+        width: .5rem
+        height: .5rem
+        
+    .snake
+        background: green
+        border-top: .1rem solid grey
+        border-left: .1rem solid grey
+        
+    .apple 
+        background: red
+        border-radius: 50%
+    
+    .wall 
+        background: blue
+        
